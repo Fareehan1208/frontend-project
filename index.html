@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunara</title>
+    <link rel="shortcut icon" href="images/Lunara Purple Skincare Still Life.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div>
+                <h3>Lunara</h3>
+            </div>
+
+            <div class="nav-items">
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#products">Products</a></p>
+                    <p><a href="#about">About</a></p>
+                    <p><a href="#contact">Contacts</a></p>
+            </div>
+
+            <div class="cart-icon" id="cart-icon">
+                <img src="images/shopping-cart.png" alt="">
+                Cart
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section id="home" class="main">
+        <div >
+            <h1>
+                Make Space for Yourself.
+            </h1>
+
+            <p class="sub-text">Thoughtfully chosen essentials to help you slow down, find your balance, and make everyday moments feel special</p>
+            
+            <p class="mini-text">Escape the everyday. Our luxurious silky formulations are infused with premiun botanicals to melt away stress and reveal your most luminous, pampered self</p>
+
+            <a href="#products"><button type="submit">Explore the Collection</button></a>
+            
+        </div>
+
+        <div>
+            <img src="images/Lunara Purple Skincare Still Life.png" alt="lunara">
+        </div>
+    </section>
+
+    <section id="products"  class="products">
+        <div>
+            <h2>The Luxury Collection</h2>
+        </div>
+
+        <div class="cards">
+            <div class="cleanser card" data-id="cleanser" data-name="Cleanser" data-price="5.00">
+                <div class="image">
+                    <img src="images/cleanser.jpg" alt="">
+                </div>
+                <h3 class="item">Cleanser</h3>
+                <p class="description">Lightweight, deep-cleansing formula for all skin type</p>
+                <p class="price">#5.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="serum card" data-id="serum" data-name="Serum" data-price="5.00">
+                <div class="image"><img src="images/serum.jpg" alt=""></div>
+                <h3 class="item">Serum</h3>
+                <p class="description">Deep hydration for smooth, glowing skin</p>
+                <br>
+                <p class="price">#5.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="toner card" data-id="toner" data-name="Toner" data-price="5.00">
+
+                <div class="image">
+                    <img src="images/toner.png" alt="">
+                </div>
+                <h3 class="item">Toner</h3>
+                <p class="description">Enhances brightness and evens skin tone</p>
+                <br>
+                <p class="price">#5.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="moisturizer card" data-id="moisturizer" data-name="Moisturizer" data-price="5.00">
+                <div class="image">
+                    <img src="images/moisturiser.webp" alt="">
+                </div>
+                <h3 class="item">Moisturizer</h3>
+                <p class="description">Lightweight hydration for all skin types</p>
+                <p class="price">#5.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+
+        </div>
+        
+    </section>
+
+    <section id="about" class="about">
+        <div>
+            <img src="images/IMG_7d6543be-612e-461e-8f6b-120c18251e40.jpg" alt="">
+        </div>
+
+        <div>
+            <h4> Pure Ingredients, Powerful Results                 
+            </h4>
+
+            <ul>
+                <li>Clean Botanical Extracts</li>
+                <li>Sustainably Sourced</li>
+                <li>Non-Comedogenic</li>
+                <li>Spa-Quality Texture</li>
+                <li>Calming Therapy</li>
+                <li>Dermatologist recommended</li>
+            </ul>
+            
+        </div>
+    </section>
+
+    <footer id="contact" >
+        <h1>Join Our Glow Community</h1>
+        <p>Skincare tips, routine breakdowns, and expert advice. Follow along to get the most out of your routine</p>
+
+        <div class="socials">
+
+            <div>
+                <a href=""><img src="images/ig.png" alt=""></a>
+            </div>
+
+            <div>
+                <a href=""><img src="images/facebook-app-symbol (1).png" alt=""></a>
+            </div>
+            
+
+            <div>
+                <a href=""><img src="images/tiktok.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <form action="">            
+            <label for="">Subscribe to our newsletter</label><br><br>
+            <input type="text" placeholder="Enter your email"><br><br>
+            <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <br>
+        &copy; LUNARA
+
+    </footer>
+
+    <div id="cart-overlay"></div>
+    <div id="cart-panel">
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="close-cart">&times;</button>
+    </div>
+    <div id="cart-items-container"></div>
+    <div class="cart-footer">
+        <div class="total-row">
+            <span>Total</span>
+            <span id="cart-total">#0.00</span>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
