@@ -465,6 +465,9 @@ body{
         padding: 14px;
 
     }
+    #home{
+        padding: 50px 10px 20px;
+    }
 
     .products h2{
         font-size: 1.5rem;
